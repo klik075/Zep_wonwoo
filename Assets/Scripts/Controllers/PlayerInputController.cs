@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PlayerInputController : CharacterController //사용자 입력에 따라 대리자에게 값을 넘겨줌
+public class PlayerInputController : TopDownCharacterController //사용자 입력에 따라 대리자에게 값을 넘겨줌
 {
     private Camera _camera;
     private void Awake() 

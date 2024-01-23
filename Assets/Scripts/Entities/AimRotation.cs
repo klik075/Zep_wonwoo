@@ -7,10 +7,10 @@ using UnityEngine.UIElements;
 public class AimRotation : MonoBehaviour
 {
     [SerializeField] private SpriteRenderer CharacterRenderer;
-    private CharacterController _cotroller;
+    private TopDownCharacterController _cotroller;
     private void Awake() 
     {
-        _cotroller = GetComponent<CharacterController>();
+        _cotroller = GetComponent<TopDownCharacterController>();
     }
     // Start is called before the first frame update
     void Start()

@@ -5,12 +5,12 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    private CharacterController _controller;
+    private TopDownCharacterController _controller;
     private Vector2 _movementDirection = Vector2.zero; 
     private Rigidbody2D _rigidbody;
     private void Awake()
     {
-        _controller = GetComponent<CharacterController>(); //PlayerInputController를 가져온다.
+        _controller = GetComponent<TopDownCharacterController>(); //PlayerInputController를 가져온다.
         _rigidbody = GetComponent<Rigidbody2D>();
     }
     // Start is called before the first frame update

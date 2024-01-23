@@ -5,11 +5,11 @@ using UnityEngine;
 public class Animations : MonoBehaviour
 {
     protected Animator animator;
-    protected CharacterController controller;
+    protected TopDownCharacterController controller;
 
     protected virtual void Awake()
     {
         animator = GetComponentInChildren<Animator>();
-        controller = GetComponent<CharacterController>();
+        controller = GetComponent<TopDownCharacterController>();
     }
 }
